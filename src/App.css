@@ -1,38 +1,89 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+.container {
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+}
+
+.todo_h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo_form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.todo_input {
+  width: 100%;
+  padding: 1rem 1rem;
+  text-align: start;
+  border: 1px solid black;
+}
+.todo_btn {
+  border: none;
+  background-image: linear-gradient(to right, #52c234, #061700);
+  padding: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.todo_count {
+  text-align: center;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to right, #52c234, #061700);
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.todo_li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-color: #eee;
+  padding: 1rem;
+}
+.todo_update {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-color: grey;
+  padding: 1rem;
+  text-decoration: line-through;
+}
+.todo_row {
+  display: flex;
+  gap: 1rem;
+}
+.todo_p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo_trash {
+  border: none;
+  cursor: pointer;
+  padding: 0.1rem;
+}
+.empty {
+  text-align: center;
+  background-image: linear-gradient(to right, #52c234, #061700);
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
